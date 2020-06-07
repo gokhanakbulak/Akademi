@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".SetupActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/profile" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setup_profile_image"
+        android:drawableLeft="@drawable/home"
+        android:hint="Meslek"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/inputs"
+        android:padding="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+    <EditText
+        android:id="@+id/setup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/username"
+        android:padding="14dp"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:background="@drawable/inputs"
+        android:hint="username"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/setup_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setup_username"
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/name"
+        android:padding="14dp"
+        android:ems="10"
+        android:background="@drawable/inputs"
+        android:hint="Full Name"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/setup_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/country"
+        android:padding="14dp"
+        android:layout_below="@id/setup_fullname"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:background="@drawable/inputs"
+        android:hint="Country"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/setup_universityt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_school_black_24dp"
+        android:padding="14dp"
+        android:layout_below="@id/setup_country"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:background="@drawable/inputs"
+        android:hint="University"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/setup_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setup_universityt"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+        android:padding="14dp"
+        android:hint="Department"
+        android:inputType="textMultiLine" />
+    <EditText
+        android:id="@+id/setup_skills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/setup_department"
+        android:drawableLeft="@drawable/ic_help_outline_black_24dp"
+        android:padding="14dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:background="@drawable/inputs"
+        android:hint="Skills"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/setup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/setup_skills"
+        android:background="@drawable/button"
+        android:padding="15dp"
+
+        android:text="SAVE" />
+
+</RelativeLayout>
+</ScrollView>

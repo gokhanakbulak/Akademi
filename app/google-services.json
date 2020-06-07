@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "202765034420",
+    "firebase_url": "https://akademi-e745c.firebaseio.com",
+    "project_id": "akademi-e745c",
+    "storage_bucket": "akademi-e745c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202765034420:android:9cc5455c05df840349c8e1",
+        "android_client_info": {
+          "package_name": "com.gokhan.akademi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202765034420-botiqvmpp1n6qp9vil71hi0ff5us3439.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gokhan.akademi",
+            "certificate_hash": "dd5de732dcc2f2ad8563f3938093ea2d5d7dc889"
+          }
+        },
+        {
+          "client_id": "202765034420-vtfca54o2md3gabgb2cc5jijcu3g7u2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAlQl7SGSq6psl_nVPcmvRGnhi8uJ6tNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202765034420-vtfca54o2md3gabgb2cc5jijcu3g7u2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

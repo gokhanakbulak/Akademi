@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".PersonProfileActivity">
+
+
+    <include android:id="@+id/person_profile_toolbar"
+        layout="@layout/app_bar_layout">
+
+    </include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/person_profile_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_profile_pic"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="@color/cardview_light_background"
+                app:civ_border_width="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/liner"
+                android:layout_below="@id/person_profile_pic"
+                >
+
+                <Button
+                    android:id="@+id/person_send_friend_request_btn"
+                    android:textAlignment="center"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_below="@id/person_profile_pic"
+
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:text="Send Follow Request"
+                    android:textColor="@color/cardview_light_background" />
+
+                <Button
+                    android:id="@+id/person_decline_friend_request_btn"
+                    android:textAlignment="center"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_below="@id/person_send_friend_request_btn"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="Reject Follow Request"
+                    android:textColor="@color/cardview_light_background" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/person_profile_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile Name"
+                android:layout_below="@id/liner"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/person_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:layout_below="@id/person_profile_full_name"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/person_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="STATUS"
+                android:layout_below="@id/person_username"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:id="@+id/yetenekvemeslek"
+                android:layout_below="@id/person_profile_status"
+                >
+            <TextView
+                android:id="@+id/person_profile_skills"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Skills"
+                android:layout_below="@id/person_profile_status"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                />
+                <TextView
+
+                    android:id="@+id/person_vasif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vasıf"
+                    android:layout_marginTop="10dp"
+
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                android:id="@+id/universityanddepartment"
+                android:layout_below="@id/yetenekvemeslek"
+                >
+
+                <TextView
+                    android:id="@+id/person_profile_university"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="University"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+
+                    android:id="@+id/person_profile_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Department"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+
+                    />
+
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/profile_article_btn"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/universityanddepartment"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:text="Articles"
+                android:textColor="@color/cardview_light_background"
+                android:onClick="btn_action"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemTextColor="#ffffff"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemIconTint="#ffffff"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        app:labelVisibilityMode="labeled"
+        android:background="?android:attr/windowBackground"
+
+        />
+</RelativeLayout>
